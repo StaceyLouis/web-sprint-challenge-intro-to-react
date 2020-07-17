@@ -7,7 +7,7 @@ const CharacterDiv = styled.div `
  display: flex;
 flex-flow: row;
 justify-content: space between;
-color: #99adc1;
+color: #ccd6e0;
 margin: 2%;
 
 `
@@ -19,14 +19,14 @@ function Character(props){
     return(
         <CharacterDiv>
             
-            <div className="cardWrap" style={{flex: 1, flexDirection: 'row'}}>
+             <div className="cardWrap" style={{flex: 1, flexDirection: 'row'}}>
              
-    <img id="charImage" src={props.image} alt={props.name}  />
+            <img id="charImage" src={props.image} alt={props.name}  />
              
-    <p className="user"> {props.name}</p>
+            <p className="user"> {props.name}</p>
 
-    <p className="comment">Species: {props.species}</p>
-    <p> Status: {props.status}</p>
+            <p className="comment">Species: {props.species}</p>
+             <p className="comment"> Status: {props.status}</p>
     </div>
  
         
